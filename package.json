@@ -1,0 +1,32 @@
+{
+  "name": "js_weather_app",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewbonas/js_weather_app.git"
+  },
+  "author": "Andrew Bonas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewbonas/js_weather_app/issues"
+  },
+  "homepage": "https://github.com/andrewbonas/js_weather_app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.5.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
