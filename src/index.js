@@ -2,6 +2,8 @@ import './style.css';
 
 import Icon from './test.jpg';
 
+import { openWeather } from './modules/weather';
+
 function component() {
   const content = document.getElementById('content');
   const element = document.createElement('div');
