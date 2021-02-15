@@ -2,11 +2,13 @@ import giphy from './gif';
 
 function buildDisplay(location, description, humidity, pressure, celsius, fahrenheit, icon) {
   const display = document.getElementById('display');
+  const tempChoice = document.getElementById('conversion').innerHTML;
+   const temp = (tempChoice === 'C') ? celsius:fahrenheit;
   display.innerHTML = `<div class = 'location'>
   ${location}
   </div>
   <div class= 'temp'>
-  ${celsius}&#176;
+  ${temp}&#176;
   </div>
   <div class= 'description'>
   ${description}
