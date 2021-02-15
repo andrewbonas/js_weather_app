@@ -1,21 +1,14 @@
 import './style.css';
 
-import Icon from './test.jpg';
+import {
+  openWeather,
+  weatherButton
+} from './modules/weather';
 
-import { openWeather, weatherButton } from './modules/weather';
+import loadContent from './modules/initial-load';
 
-
-
-function component() {
-  const content = document.getElementById('content');
-  const element = document.createElement('div');
-  const myIcon = new Image();
-  myIcon.src = Icon;
-  // Lodash, now imported by this script
-  element.innerHTML = 'hello';
-  element.classList.add('hello');
-  element.appendChild(myIcon);
-  content.appendChild(element);
+function init() {
+  loadContent();
 }
 
-component();
+init();

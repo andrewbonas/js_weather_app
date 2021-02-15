@@ -1,3 +1,51 @@
-.hello {
-  color: red;
+.weather {
+  color: rgb(230, 230, 230);
+}
+.hero {
+  background: linear-gradient(
+      132deg,
+      rgba(42, 42, 43, 0.8) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    url(background.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30%;
+}
+
+#winput {
+width: 300px;
+border: none;
+border-radius: 5px;
+padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100px;
+  cursor: pointer;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 5px;
+  border: 2px solid #494949  !important;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+color: #20bf6b !important;
+border-radius: 50px;
+border-color: #20bf6b !important;
+transition: all 0.3s ease 0s;
 }
