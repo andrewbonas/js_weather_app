@@ -10,7 +10,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
@@ -19,20 +20,20 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              ['@babel/preset-env', {
-                useBuiltIns: "usage",
-                corejs: 3,
-              }]
-            ]
-          }
+      test: /\.m?js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: "babel-loader",
+        options: {
+          presets: [
+            ['@babel/preset-env', {
+            useBuiltIns: "usage",
+            corejs: 3,
+          }]
+        ]
         }
       }
+    }
     ],
   },
   plugins: [new ESLintPlugin()],
