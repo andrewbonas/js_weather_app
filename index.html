@@ -11,32 +11,29 @@
 <body>
   <div id="content">
     <div class="hero">
-      <div class='weather'>
-        <div id="display">
-        </div>
-        <div id="giphy">
-          <img id="gif" src=# />
+      <div class="weather">
+        <div class="output">
+          <div id="display">
+          </div>
+          <div id="giphy">
+            <img id="gif" src=# />
+          </div>
         </div>
         <div class="user-input">
           <span id="error"></span>
           <input type="text" id="winput" placeholder="Search City" />
           <div class="temp-toggle">
-
             <label class="switch">
               <input type="checkbox" id="toggle-input" onclick="tempChoice()">
               <span class="slider round"></span>
             </label>
             <span id="conversion">C</span>
           </div>
-
           <button id="weather-button" onclick="weatherButton()">search</button>
         </div>
       </div>
     </div>
   </div>
-
-
   <script src="bundle.js"></script>
 </body>
-
 </html>
