@@ -39,7 +39,7 @@ async function openWeather() {
   let error = document.getElementById('error');
   if (!search) search = 'Tokyo';
   try {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=e6f480d766a5c383c3c37252cc5674e2`, {
+    const response = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=e6f480d766a5c383c3c37252cc5674e2`, {
       mode: 'cors',
     });
     const weatherData = await response.json();
