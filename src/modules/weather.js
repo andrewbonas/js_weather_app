@@ -3,8 +3,10 @@ import giphy from './gif';
 function buildDisplay(location, description, humidity, pressure, celsius, fahrenheit, icon) {
   const display = document.getElementById('display');
   const tempChoice = document.getElementById('conversion').innerHTML;
-   const temp = (tempChoice === 'C') ? celsius:fahrenheit;
-  display.innerHTML = `<div class = 'location'>
+  const temp = (tempChoice === 'C') ? celsius : fahrenheit;
+  display.innerHTML = `
+  <div class='data'>
+  <div class = 'location'>
   ${location}
   </div>
   <div class= 'temp'>
@@ -15,6 +17,7 @@ function buildDisplay(location, description, humidity, pressure, celsius, fahren
   </div>
   <div class= 'pressure'>
   ${pressure}
+  </div>
   </div>
   <img class= 'icon' src="http://openweathermap.org/img/wn/${icon}@2x.png">
   `;

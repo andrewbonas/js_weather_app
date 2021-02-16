@@ -1,11 +1,10 @@
 import './style.css';
-
+import loadContent from './modules/initial-load';
 import {
   openWeather,
   weatherButton
 } from './modules/weather';
 
-import loadContent from './modules/initial-load';
 
 window.tempChoice = function() {
   const toggle = document.getElementById('toggle-input');
